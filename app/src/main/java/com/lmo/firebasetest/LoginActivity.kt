@@ -80,6 +80,7 @@ class LoginActivity: AppCompatActivity() {
 
     private fun chgActivity() {
         val intent = Intent(this, MainActivity::class.java)
+        intent.putExtra("mail", "${mail_tv.text}")
         startActivity(intent)
     }
 
